@@ -1,0 +1,7 @@
+﻿<div>Static content</div>
+<div>@ChildContent</div>
+
+@code {
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}

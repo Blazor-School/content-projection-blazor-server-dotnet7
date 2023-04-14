@@ -1,0 +1,18 @@
+﻿<div>The content of the slot 1:</div>
+<div>@Slot1</div>
+<div>The content of the slot 2:</div>
+<div>@Slot2</div>
+<div>The content of the slot 3:</div>
+<div>@Slot3</div>
+
+@code {
+    [Parameter]
+    public RenderFragment? Slot1 { get; set; }
+    [Parameter]
+    public RenderFragment? Slot2 { get; set; }
+    [Parameter]
+    public RenderFragment? Slot3 { get; set; } = (__builder) =>
+    {
+        <div>Default content</div>
+    };
+}

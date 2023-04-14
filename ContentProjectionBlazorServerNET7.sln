@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContentProjection", "ContentProjection\ContentProjection.csproj", "{5120A520-39CB-4516-AD25-05E7F0E2FDBB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5120A520-39CB-4516-AD25-05E7F0E2FDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5120A520-39CB-4516-AD25-05E7F0E2FDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5120A520-39CB-4516-AD25-05E7F0E2FDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5120A520-39CB-4516-AD25-05E7F0E2FDBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {18F855DF-111C-4C45-8487-42915D2EB014}
+	EndGlobalSection
+EndGlobal

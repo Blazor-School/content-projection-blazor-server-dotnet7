@@ -1,0 +1,20 @@
+﻿@using ContentProjection.Models;
+@typeparam T where T : IAnimal
+
+<h3>Animal Detail</h3>
+<p>Name: @Animal.Name</p>
+
+@if(ChildContent is not null)
+{
+    @ChildContent.Invoke(GetExamineDetail(Animal))
+}
+
+@code {
+    [Parameter]
+    public T Animal { get; set; }
+
+    [Parameter]
+    public RenderFragment<string>? ChildContent { get; set; }
+
+    private string GetExamineDetail(IAnimal animal) => $"The age is: {Animal.Age}.";
+}

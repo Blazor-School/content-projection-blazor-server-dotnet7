@@ -1,0 +1,27 @@
+﻿@page "/generic-projection"
+@using ContentProjection.Components
+@using ContentProjection.Models
+
+@foreach (var animal in Animals)
+{
+    <AnimalDetail Animal="animal" />
+}
+
+<AnimalDetail Animal="Stray" Context="examinateDetail">
+    We have found this stray cat in a bush. @examinateDetail
+</AnimalDetail>
+
+@code {
+    public List<IAnimal> Animals { get; set; } = new()
+    {
+        new Dog() { Name = "Doggy", Age = 2 },
+        new Bird() { Name = "Birb", Age = 0 },
+        new Cat() { Name = "Kitty", Age = 2 }
+    };
+
+    public Cat Stray { get; set; } = new()
+        {
+            Name = "Stray Cat",
+            Age = 3
+        };
+}
